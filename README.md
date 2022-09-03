@@ -1,6 +1,6 @@
 # ROBDD
 
-
+PLEASE WATCH "intro.pdf"
 
 
 1.Download the file in linux.
