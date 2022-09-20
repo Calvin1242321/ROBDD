@@ -97,37 +97,34 @@ void obdd(ifstream& fin)
 	{
 		fin >> ch_trash;
 	}
-	for (int i = 1; i < pow(2, input_n); i++)
-	{
-		char ttemp = 'a';
+	
+	char ttemp = 'a';
 
-		node_n[1].variable = 'a';
-		if(input_n >= 2)
-		{
-			for (int j = 2;j < 4;j++)
-				node_n[j].variable = 'b';
+	node_n[1].variable = 'a';
+	if(input_n >= 2)
+	{
+		for (int j = 2;j < 4;j++)
+			node_n[j].variable = 'b';
 			
-		}
-		if(input_n >= 3)
-		{
-			for (int j = 4;j < 8;j++)
-				node_n[j].variable = 'c';
-			
-		}
-		if(input_n >= 4)
-		{
-			for (int j = 8;j < 16;j++)
-				node_n[j].variable = 'd';
-			
-		}
-		if(input_n >= 5)
-		{
-			for (int j = 16;j < 32;j++)
-				node_n[j].variable = 'e';
-			
-		}
-		
 	}
+	if(input_n >= 3)
+	{
+		for (int j = 4;j < 8;j++)
+			node_n[j].variable = 'c';
+			
+	}
+	if(input_n >= 4)
+	{
+		for (int j = 8;j < 16;j++)
+			node_n[j].variable = 'd';
+	}
+	if(input_n >= 5)
+	{
+		for (int j = 16;j < 32;j++)
+			node_n[j].variable = 'e';	
+	}
+		
+	
 
 	// block of '.ob'
 	fin >> str;
